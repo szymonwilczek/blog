@@ -5,7 +5,7 @@ const projectsData = [
     modelowania w Blenderze oraz programowania w języku JavaScript można powiedzieć że przyprawiłem się na własne
     życzenie o siwe włosy.`,
     imgSrc: '/static/images/share-1200x600.png',
-    href: 'http://radzionkow.net',
+    href: '/blog/portfolio',
   },
   {
     title: 'Bot muzyczny & architektura',

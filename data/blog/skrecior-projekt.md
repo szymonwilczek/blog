@@ -12,7 +12,7 @@ To źle trafiłeś. Skręcior to zwyczajny chłopak z klatki blokowej, który - 
 ## Pomysł
 
 Sam pomysł na bota narodził się, kiedy zaczęły wymierać wszystkie boty muzyczne przez strike'i otrzymane od np. YouTube. Kolega, który wiedział, że zajmuję się programowaniem, napisał, czy przypadkiem nie byłym w stanie ukleić jakiegoś. Oczywiście, że byłem. Skorzystać z gotowej templatki znalezionej w 20 minut i podaniu tokena. Cała praca zajęła około 10 minut. Potem narodziły się większe problemy. Link do dodania bota został podsyłany coraz dalej i dalej. Użytkownicy domagali się wsparcia np. Spotify czy Apple Music, czego ta templatka nie posiadała wbudowanego. Zdecydowałem wtedy, że to nie jest to. Żeby mieć w pełni kontrolę nad kodem muszę napisać go własnoręcznie. Po wielu nieprzespanych nocach pojawiła się oficjalna `wersja 1.0`.Nie powiem, było z nią tyle problemów jak z niczym innym. Przykładowo, nie wspierała niczego innego jak zwykły link. Ah.. Strasznie to wyglądało. Podrzucam tu screena z tego czasu:
-![Początki bywają ciężkie](http://radzionkow.net/test/blog/images/skrecior/skrecior-poczatki.png)
+![Początki bywają ciężkie](https://i.imgur.com/A0bI4v5.png)
 
 Nie wspominam już nawet o tym, że dokładność wyszukiwania, brak większości funkcji były na porządku dziennym. Co lepsze, korzystał z gotowego publicznego modułu do puszczania muzyki, więc można się domyślić, że jego stabilność była okropna.
 
@@ -29,8 +29,8 @@ Czas więc zobaczyć jakieś poradiki na YouTubie prawda? Tak. Przydałoby się.
 # Implementacja
 
 Przyszedł czas, kiedy po zrozumieniu działania każdej rzeczy z osobna, doszło do implementacji tego w jedną, piękną całość. Niestety i na tym etapie pojawiły się problemy. Cały czas coś sypało błąd w konsoli, co zaprzestawało działanie bota. Poniżej zamieszczam wykres miesięcznych błędów wyłapanych w konsoli:
-![Październik](http://radzionkow.net/test/blog/images/skrecior/pazdziernik.png)
-![Listopad](http://radzionkow.net/test/blog/images/skrecior/listopad.png)
+![Październik](https://i.imgur.com/07w6hEB.png)
+![Listopad](https://i.imgur.com/u6lUe2C.png)
 Drugi screen nie jest podpisany ale jest to **listopad**. Oba miesiące są z roku **2021**, gdzie to właśnie takowy zwykły Skręcik zaczynał ożywać. Nie chcę myśleć ile użytkowników na tym ucierpiało, ale na pewno ta ilość nie jest mała.\
 W końcu przyszedł czas. Grudniowy, zimowy, świąteczny czas. Kiedy inni spędzali go pijąc gorącą czekoladę ja siedziałem w dalszym ciągu nad poprawą architektury serwera i co najważniejsze - **kodu źródłowego bota**, który okazał się być głównym prowoderem błędów. Okazywało się, że Lavalink po rozłączeniu się z botem, przez np. długi czas niekorzystania z niego **nie łączy się z nim automatycznie ponownie**. Więc za każdym razem trzeba było ręcznie go restartować. Pod koniec miesiąca wpadło mi do głowy rozwiązanie, kiedy idąc do domu przewróciłem się i mocniej trzasnąłem głową o krawężnik. **Wszystko było tak banalne**, a i tak dla mnie niezauważalne. No ale przecież, najciemniej pod latarnią. Od razu pobiegłem do komputera i wprowadziłem pomysł w życie. `TAK!` `TAK!` `TO BYŁO TO!`.\
 Zastanawiające **CO** prawda? Sam do końca nie wiem, musiałem **zaktualizować używane moduły** xD.
@@ -65,14 +65,14 @@ Ludzie zapisywali swoje serwery na listę, ja je zatwierdzałem, a z serwerów, 
 
 Wyjście z problemu nigdy nie było moim pomysłem. Zawdzięczam je w 100% nieznanemu mi osobiście niestety użytkownikowi, który wysunął tak proste rozwiązanie, że aż genialne.\
 `Mejzu#7924`, użytkownik Skręciora na tenmoment i mam nadzieję, że do dziś, zaproponował to:
-![Dziękuję Ci za to](http://radzionkow.net/test/blog/images/skrecior/pomysl1.png)
+![Dziękuję Ci za to](https://i.imgur.com/7QQLMR7.png)
 `Jeśli to czytasz, nie wiesz jak jestem Ci wdzięczny, za to że cała moja praca nie poszła na marne.`\
 Na co odpowiedziałem:
-![Moja odpowiedź](http://radzionkow.net/test/blog/images/skrecior/pomysl2.png)
+![Moja odpowiedź](https://i.imgur.com/GRWaG9L.png)
 **NO I WYSZŁO. PIERWSZY RAZ WSZYSTKO WYSZŁO JAK MIAŁO ZA PIERWSZYM RAZEM!** Szczęście było nie do opisania. Starej wersji zablokowałem możliwość dodawania go na serwery i do linka do zaproszenia go na serwer dodałem redirecta do zaproszenia nowej wersji.\
 `Panie i panowie, powitajmy Skręciora!`\
 A no tak, zapomniałem dopowiedzieć. **DJ Skręt Jąder** to pierwsza, oryginalna nazwa, którą się posługiwał bot. Każdy nazywał go zdrobniale Skręcior, więc chyba nie miałem innej opcji jak nazwanie tak drugiej wersji.\
-![Skręcior](http://radzionkow.net/test/blog/images/skrecior/skrecior2.0.png)
+![Skręcior](https://i.imgur.com/M0GAxeu.png)
 
 Poszedł lekki spoiler, o jego weryfikacji poniżej.
 
@@ -80,7 +80,7 @@ Poszedł lekki spoiler, o jego weryfikacji poniżej.
 
 Znając taktykę wroga i moje błędy z poprzedniej bitwy byłem w stanie wygrać wojnę. Wysłałem weryfikację, która w żadnym stopniu nie opisuje funkcjonalności muzycznej. **Genialne, niebanalne i twórcze.**\
 Co lepsze, **weryfikacja została przyjęta na następny dzień** xD.
-![Weryfikacja](http://radzionkow.net/test/blog/images/skrecior/accept.png)
+![Weryfikacja](https://i.imgur.com/zOk3EZW.png)
 Byłem niesamowicie przeszczęśliwy, że teraz nie muszę się już martwić o nic.
 
 - [x] Funkcjonalność Lavalinka
@@ -94,17 +94,17 @@ Mi to nie wystarczało. Ja chciałem więcej. Tak jak nazywa się EPka Belmondo 
 Użytkownicy rosną i rosną, a ja pracować nie przestaję. Odświeżony design, nowe komendy, nowe filtry, _które przestały być kulą u nogi_, usprawnienia struktury, usprawnienia kodu, wszystko nowe nowe i nowe.
 
 Praca nad botem trwa już od ponad roku a użytkownicy nadal są zadowoleni z mojej pracy. Jest to niesamowite dostać takie komentarze jak, te, które można znaleźć poniżej. Gwarantuję, nie ma nic lepszego dla programisty niż docenienie jego pracań i starań włożonych w projekt.
-![Komentarze](http://radzionkow.net/test/blog/images/skrecior/comments1.png)
-![Komentarze](http://radzionkow.net/test/blog/images/skrecior/comments2.png)
-![Komentarze](http://radzionkow.net/test/blog/images/skrecior/comments3.png)
+![Komentarze](https://i.imgur.com/NQBOlC4.png)
+![Komentarze](https://i.imgur.com/1OopmtO.png)
+![Komentarze](https://i.imgur.com/hHxy8Tt.png)
 
 Skręcior dzięki wam służy dziennie ponad `5 milionami` odtworzonych utworów dla ponad `50 tysięcy` użytkowników. **Statystyki z dnia 27.11.2022**\
 _(Zsumowane statystyki z obu botów)_
-![Statystyki](http://radzionkow.net/test/blog/images/skrecior/stats.png)
+![Statystyki](https://i.imgur.com/BV4lBT4.png)
 
 Bardzo dziękuję każdemu, który włożył cegiełkę w tworzeniu Skręciora. Jak widać, jest to dla mnie coś więcej niż tylko aplikacja na Discordzie. Bardzo dziękuję za to, że jesteście z nami.\
 Odmeldowuję się jak zawsze.
-![Odmeldowanie](http://radzionkow.net/test/blog/images/skrecior/bye.png)
+![Odmeldowanie](https://i.imgur.com/YVY1ply.png)
 
 ### Linki
 

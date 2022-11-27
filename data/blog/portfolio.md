@@ -11,11 +11,11 @@ summary: 'Portfolio wykonane przy użyciu modułu three.js i modeli w Blenderze'
 Pomysł stworzenia czegokolwiek w 3D pojawił się po obejrzeniu [filmu](https://www.youtube.com/watch?v=Q7AOvWpIVHU) na YouTube u Fireshipa. Stwierdziłem, że moduł jest niesamowity i na pewno w jakimś stopniu ma niewykorzystany potencjał. Jednocześnie zastanawiałem się, jak zaktualizować swoje stare portfolio, które jest wykonane z gotowego szablonu z CMSów.\
 \
 `Początkowo moje portfolio wyglądało tak:`
-![portfolio](http://radzionkow.net/test/blog/images/portfolio3d/stare-portfolio.png)
+![portfolio](https://i.imgur.com/cO0kyoF.png)
 Najbardziej mnie śmieszy niezmieniony mockup na samym początku. Po kilkunastu kursach zmieniłem je na takie:
-![portfolio2](http://radzionkow.net/test/blog/images/portfolio3d/portfolio2.png)
+![portfolio2](https://i.imgur.com/OGDtit6.png)
 Które wygląda już bardziej imponująco, trzeba przyznać. Oczywiście, znając mnie, znudziłem się i tym więc postanowiłem pójść w stronę **parallax effectu** i stworzyłem je, idealne pod tym względem:
-![portfolio3](http://radzionkow.net/test/blog/images/portfolio3d/portfolio3.png)
+![portfolio3](https://i.imgur.com/nnziSNy.png)
 Gdzie niestety nie mam już zdjęcia tego księżyca, dlatego jest `alt, Moon`, co trochę psuje efekt, ale musicie uwierzyć, było piękne. Jednakże, po kilku miesiącach znudziłem się i tym i postanowiłem zrobić coś zupełnie innego. Zdecydowałem się na **3D**.
 
 ## Modelowanie
@@ -44,4 +44,4 @@ Przygoda z modułem 3D była ciężka, ale niesamowicie satysfakcjonująca i cie
 * Żaden silnik 3D nie jest mi już straszny.
 
 ### Linki 
-* [Portfolio można zobaczyć tutaj](https://radzionkow.net)
+* [Portfolio można zobaczyć tutaj](http://radzionkow.net)

@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Blog | Szymon Wilczek',
   author: 'Szymon Wilczek',
   headerTitle: 'Szymon Wilczek',
-  description: 'Niżej znajdziesz wszystkie dodane ostatnio posty.',
+  description: 'Niżej znajdują się wszystkie dodane ostatnio posty.',
   language: 'pl-PL',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
