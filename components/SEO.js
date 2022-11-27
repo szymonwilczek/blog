@@ -29,7 +29,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, canonicalUrl }) => {
 export const PageSEO = ({ title, description }) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
-  return <CommonSEO title={title} description={description} ogType="website" ogImage={ogImageUrl} />
+  return <CommonSEO title={title} ogType="website" ogImage={ogImageUrl} />
 }
 
 export const TagSEO = ({ title, description }) => {
@@ -38,18 +38,11 @@ export const TagSEO = ({ title, description }) => {
   const router = useRouter()
   return (
     <>
-      <CommonSEO
-        title={title}
-        description={description}
-        ogType="website"
-        ogImage={ogImageUrl}
-        twImage={twImageUrl}
-      />
+      <CommonSEO title={title} ogType="website" ogImage={ogImageUrl} twImage={twImageUrl} />
       <Head>
         <link
           rel="alternate"
           type="application/rss+xml"
-          title={`${description} - RSS feed`}
           href={`${siteMetadata.siteUrl}${router.asPath}/feed.xml`}
         />
       </Head>
