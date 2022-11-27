@@ -24,7 +24,7 @@ export default function Footer() {
           className="mb-8 text-sm text-gray-500 dark:text-gray-400"
           style={{ textAlign: 'center' }}
         >
-          <Link href="http://radzionkow.net">
+          <Link href="http://radzionkow.net/portfolio">
             🌴 Dziękuję za odwiedziny! <br></br>Kliknij tutaj, żeby przenieść się do strony głównej.
             🌐
           </Link>
