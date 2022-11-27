@@ -33,8 +33,8 @@ export default function Projects() {
           className="text-lg leading-10 text-gray-500 dark:text-gray-400"
           style={{ justifyContent: 'center' }}
         >
-          Na obecny moment to wszystko co mogę pokazać światłu dziennemu. <br></br> Nie wolno przecież zapominać o projektach prywatnych. 🤫<br></br> Jeśli chcesz,
-          żeby znalazł się tutaj Twój projekt z moim udziałem -> zapraszam do kontaktu. ⬇️
+          Na obecny moment to wszystko co mogę pokazać światłu dziennemu. Jeśli żeby znalazł się
+          tutaj Twój projekt z moim udziałem -> zapraszam do kontaktu. ⬇️
         </p>
       </div>
     </>
