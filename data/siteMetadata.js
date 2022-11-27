@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Blog | Szymon Wilczek',
   author: 'Szymon Wilczek',
   headerTitle: 'Szymon Wilczek',
-  description: 'Niżej znajdują się wszystkie dodane ostatnio posty.',
+  description: 'Blog o programowaniu i nie tylko.',
   language: 'pl-PL',
   theme: 'system', // system, dark or light
   siteUrl: 'http://radzionkow.net/portfolio',
