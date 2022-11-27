@@ -12,7 +12,6 @@ const CommonSEO = ({ title, description, ogType, ogImage, canonicalUrl }) => {
       <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
       <meta property="og:type" />
       <meta property="og:site_name" content={siteMetadata.title} />
-      <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
       {ogImage.constructor.name === 'Array' ? (
         ogImage.map(({ url }) => <meta property="og:image" content={url} key={url} />)
