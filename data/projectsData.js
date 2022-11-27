@@ -1,19 +1,17 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: '3D Portfolio',
+    description: `Osobiste portfolio wykonane na bazie modułu three.js. Z pomocą umiejętności
+    modelowania w Blenderze oraz programowania w języku JavaScript można powiedzieć że przyprawiłem się na własne
+    życzenie o siwe włosy.`,
+    imgSrc: '/static/images/share-1200x600.png',
+    href: 'http://radzionkow.net',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Bot muzyczny & architektura',
+    description: `Wymarzył Ci się kompletnie DARMOWY bot na Discorda, który wspiera wszystkie zazwyczaj płatne funkcje? To źle trafiłeś. Skręcior - BOTaką nosi nazwę jest ziomalem, który spełni Twoje każde oczekiwania muzyczne.`,
+    imgSrc: '/static/images/skrecior-projekt-final.png',
+    href: '/blog/skrecior-projekt',
   },
 ]
 

@@ -1,6 +1,6 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
+name: Szymon Wilczek
+avatar: /static/images/avatar_blog.png
 occupation: Professor of Atmospheric Science
 company: Stanford University
 email: address@yoursite.com

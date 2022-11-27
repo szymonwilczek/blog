@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
+import { Howl, Howler } from 'howler'
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
@@ -10,10 +11,13 @@ const ThemeSwitch = () => {
 
   return (
     <button
-      aria-label="Toggle Dark Mode"
+      aria-label="Włącz tryb ciemny"
       type="button"
       className="ml-1 mr-1 h-8 w-8 rounded p-1 sm:ml-4"
-      onClick={() => setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')}
+      onClick={() => {
+        setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')
+        play()
+      }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -36,3 +40,10 @@ const ThemeSwitch = () => {
 }
 
 export default ThemeSwitch
+
+function play() {
+  var audio = new Audio(
+    'https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3'
+  )
+  audio.play()
+}
