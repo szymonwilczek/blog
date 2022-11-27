@@ -111,4 +111,4 @@ Odmeldowuję się jak zawsze.
 - Link do serwera Discordowego, miejsce gdzie można przysiąść i pogadać z innymi użytkownikami Skręciora: [Klik](https://discord.gg/4TWmMfMU6N)
 - Link do zaproszenia Skręciora na swój serwer: [Klik](https://discord.com/api/oauth2/authorize?client_id=939103800898224139&permissions=8&scope=bot)
 - Link do Terms Of Service Skręciora: [Klik](http://radzionkow.net/terms)
-- Link do mojej głównej strony internetowej: [Klik](http://radzionkow.net)
+- Link do mojej głównej strony internetowej: [Klik](http://radzionkow.net/portfolio)
