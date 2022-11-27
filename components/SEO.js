@@ -8,9 +8,9 @@ const CommonSEO = ({ title, description, ogType, ogImage, canonicalUrl }) => {
     <Head>
       <title>{title}</title>
       <meta name="Blog" content="follow, index" />
-      <meta name="Blog na którym opisuję ostatnie przeżycia." content={description} />
+      <meta name="Blog na którym opisuję ostatnie przeżycia." />
       <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
-      <meta property="og:type" content={ogType} />
+      <meta property="og:type" />
       <meta property="og:site_name" content={siteMetadata.title} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
@@ -30,15 +30,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, canonicalUrl }) => {
 export const PageSEO = ({ title, description }) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
-  return (
-    <CommonSEO
-      title={title}
-      description={description}
-      ogType="website"
-      ogImage={ogImageUrl}
-      twImage={twImageUrl}
-    />
-  )
+  return <CommonSEO title={title} description={description} ogType="website" ogImage={ogImageUrl} />
 }
 
 export const TagSEO = ({ title, description }) => {

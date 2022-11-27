@@ -24,9 +24,10 @@ Dowiedziałem się, że przecież można modele tworzyć w Blenderze, a nie od z
 
 ## Hitboxy
 
-Żeby modele były klikalne i dostępne do interakcji użytkownika trzeba przecież dodać hitboxy. No tak, ale jak? Z pomocą tutaj przychodzą `Vectory`. Wystarczyło stworzyć prostokąt o wymiarach modelu i przypisać mu odpowiednią klasę, która pozwalałaby na interakcję z użytkownikiem. Wszystko działało idealnie, aż do momentu, gdy zdecydowałem się na dodanie **animacji**. 
+Żeby modele były klikalne i dostępne do interakcji użytkownika trzeba przecież dodać hitboxy. No tak, ale jak? Z pomocą tutaj przychodzą `Vectory`. Wystarczyło stworzyć prostokąt o wymiarach modelu i przypisać mu odpowiednią klasę, która pozwalałaby na interakcję z użytkownikiem. Wszystko działało idealnie, aż do momentu, gdy zdecydowałem się na dodanie **animacji**.
 
 # Tekstury
+
 Ostatnią rzeczą do zrobienia przed implementacją funkcjonalności strony były tekstury. Gadka taka sama jak przy modelowaniu. Nic ciężkiego, ale bardzo czasochłonne. Szukanie odpowiednich wymiarów, przycinanie, składanie je w jeden plik, składanie ich w trójwymiarowej rzeczywistości... nieprzyjmne. Po prostu **nieprzyjemne**. Ale jakie to było piękne, gdy wszystko się udało.
 
 ## Animacje
@@ -34,14 +35,18 @@ Ostatnią rzeczą do zrobienia przed implementacją funkcjonalności strony był
 Taaak. Animacje. **Najgorzej wspominany okres w tym czasie**. Animacje kamery, żeby wchodziły w interakcje z użytkownikiem i tworzyły swojego rodzaju **immersję** były niezmiernie ciężkie do wykonania. Przenoszenie kamery z punktu `(x,y,z)` do innego punktu `(x,y,z)` było łatwe, ale w 2D, gdzie to punkt ma tylko współrzędne `(x,y)`. Kiedy dochodzi trzecia przestrzeń nie jest już tak kolorowo. Wyrywając sobie kolejne włosy na kolejnych animacjach udało się stworzyć je w pełni kompletne.
 
 # Dodanie nowych funkcjonalności
+
 Zawsze mnie denerwowało kiedy na stronie nie można robić nic więcej niż się po niej przewijać scrollem.
 Tak więc dodałem parę ekranów do całego pliku z Blendera, które pozwalają na odtworzenie filmików, z YouTube i własnych. Teraz, kiedy już użytkownik nie będzie nudzić się na stronie, jest w stanie zobaczyć coś więcej niż tylko moje portfolio - ❤️ włożone w pracę i uwagę do detali.
 
 # Podsumowanie
-Przygoda z modułem 3D była ciężka, ale niesamowicie satysfakcjonująca i ciekawa. Dzięki niemu nauczyłem się wielu rzeczy, które mogę wykorzystać w przyszłości. 
-* Dzięki JavaScriptowi rozwinąłem się w programowaniu, a także w pracy z bibliotekami.
-* Moja wyobraźnia przestrzenna w życiu nie była tak rozwinięta.
-* Żaden silnik 3D nie jest mi już straszny.
 
-### Linki 
-* [Portfolio można zobaczyć tutaj](http://radzionkow.net)
+Przygoda z modułem 3D była ciężka, ale niesamowicie satysfakcjonująca i ciekawa. Dzięki niemu nauczyłem się wielu rzeczy, które mogę wykorzystać w przyszłości.
+
+- Dzięki JavaScriptowi rozwinąłem się w programowaniu, a także w pracy z bibliotekami.
+- Moja wyobraźnia przestrzenna w życiu nie była tak rozwinięta.
+- Żaden silnik 3D nie jest mi już straszny.
+
+### Linki
+
+- [Portfolio można zobaczyć tutaj](http://radzionkow.net/portfolio)

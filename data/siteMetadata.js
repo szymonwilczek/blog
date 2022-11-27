@@ -5,8 +5,8 @@ const siteMetadata = {
   description: 'Niżej znajdują się wszystkie dodane ostatnio posty.',
   language: 'pl-PL',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'http://radzionkow.net/portfolio',
+  siteRepo: '',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar_blog.png',
   socialBanner: '',
