@@ -11,22 +11,21 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
   const subscribe = async (e) => {
     e.preventDefault()
 
-    const res = await fetch(`/api/${siteMetadata.newsletter.provider}`, {
+    const res = await fetch(`https://api.buttondown.email/v1/subscribers`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'Token ' + process.env.BUTTONDOWN_API_KEY,
+      },
       body: JSON.stringify({
         email: inputEl.current.value,
       }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
     })
-
-    const { error } = await res.json()
-    if (error) {
-      setError(true)
-      setMessage('Your e-mail address is invalid or you are already subscribed!')
-      return
-    }
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(`Submitted to Buttondown:\n ${data}`)
+      })
+      .catch((error) => ({ statusCode: 422, body: String(error) }))
 
     inputEl.current.value = ''
     setError(false)
