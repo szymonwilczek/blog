@@ -1,0 +1,213 @@
+---
+title: Nowe twierdzenie matematyczne
+date: '2022-11-28'
+tags: ['matematyka']
+draft: false
+summary: 'Całkiem przypadkiem to i człowiek matematykę odkryje na nowo.'
+---
+
+# Wprowadzenie
+
+Kolega poprosił mnie, żebym powtórzył z nim granice funkcji.\
+Podawał mi przykłady w których znaleźliśmy zależność opisaną w tym artykule.\
+Dla niewtajemniczonych granice funkcji to **wartości, do której obrazy danej funkcji zbliżają się nieoganiczenie dla konkretnie podanych argumentów praktycznie zbliżonych do wybranego punktu**.\
+Może to brzmieć strasznie, ale wcale takie nie jest. Załóżmy to na przykładzie:\
+`Obliczymy granicę funkcji dla:`\
+$f(x)=\frac{1-x}{2}$ w punkcie $x_0=2$\
+\
+Bierzemy dowolny ciąg $x_n$ zbieżny do 2 o wyrazach różnych o od 2, czyli $lim_{n\to\infty}x_n=2$, $x_n\neq2$\
+(Takich ciągów jest nieskończenie wiele, nie musimy przy tym znać wzoru na n-ty wyraz ciągu)
+
+Tworzymy ciąg wartości funkcji:\
+$f(x_n)=\frac{1-x_n}{2}$ i obliczamy jego granicę.\
+**Trzeba zauważyć**, że obliczamy granicę `ciągu`, czyli przy $n$ dążącym do nieskończoności.\
+Granica funkcji $f(x)$ w punkcie $x_0$ to $lim_{x\to x_0}f(x)$ = $lim_{x\to 2}\frac{1-x}{2}$ = $\frac{1-2}{2}$ = $-\frac{1}{2}$\
+Widzicie, nie takie ciężkie. Podstawianie i wyliczanie, w większości przypadków wyciąganie $n$ lub $x$ przed nawias i skracanie.\
+
+# Liczba Eulera
+
+Granice funkcji są troszkę cięższe na poziomie zazwyczaj studyjnym. Wchodzi tutaj wiele granic funkcji trygonometrycznych, ale my się będziemy przyglądać głównie `Liczbie Eulera`.\
+Liczba Eulera, znana również pod nazwą Liczba Nepera, jest oznaczana w matematyce krótko $e$.\
+Jej wartość można w przybliżeniu określić jako\
+$e=2,71828182845904523536028747135266249775724709369995...$\
+Dlatego, żeby uprościć obliczenia, matematycy wprowadzili oznaczenie, czyli to nasze $e$.\
+Nie będę w tym twierdzeniu opierał się na wartości liczby Eulera, ale na **jej definicji**.\
+
+Liczbę Eulera można zdefiniować na wiele sposobów, np:
+
+- 1. Jako suma szeregu:
+     $$e=\sum_{n=0}^{\infty}\frac{1}{n!}$$
+- 2. Jako szereg Maclaurina:
+     $$e=\sum_{n=0}^{\infty}\frac{x^n}{n!}$$
+- 3. lub jako granicę ciągu: $e=lim_{n\to\infty}(1+\frac{1}{n})^n$
+     I właśnie na tej **3** opcji będę bazował.
+
+# Twierdzenie
+
+Założenia: $k,x,z \in \mathbb{R}$\
+Definicja: $e^1 = (1 + \frac{1}{n})^n$
+
+**Wzór ogólny naszego twierdzenia:**\
+$(1 + \frac{x}{z})^k = e^{lim_{k\to 0}\frac{k\cdot x}{z}}$
+
+Tak. Wiem. Dużo niezrozumiałych literek i symboli. Pozwólcie, że przedstawię je na przykładach, wtedy na pewno wyda się to bardzo proste:\
+$lim_{n\to 0}(\frac{n^3-4}{n^3+7})^{3n^3-2}$
+Okej, więc jak się w ogóle wziąć za taki przykład?\
+**Korzystając z definicji $e^1$**, która znajduje się wyżej, należy **rozłożyć nawias**, tak, żeby lewa strona nawiasu przed znakiem **$+$** była **reprezentowana za pomocą mianownika** i **dawała $1$**, a prawa strona - **również zareprezentowana za pomocą mianownika** - to cała reszta, żeby równanie nawiasu dawało `Lewa strona + prawa strona = nawias w formie podstawowej`.\
+To znaczy, że w tym przykładzie będzie się to prezentowało następująco:\
+$lim_{n\to 0}(\frac{n^3-4}{n^3+7})^{3n^3-2} = lim_{n\to 0}(\frac{n^3+7}{n^3+7} + \frac{-11}{n^3+7})^{3n^3-2}$\
+\
+Jak widać, $\frac{n^3+7}{n^3+7}$ to tak naprawdę $1$, więc lewą stronę równania rozłożyliśmy **prawidłowo**.\
+Prawą stronę sprawdzamy w taki sposób:\
+Podstawowa wartość licznika w niawiasie to ${n^3-4}$, więc należy od niej **odjąć mianownik**, żeby powstał nam **licznik prawej strony**:\
+${n^3-4} - (n^3+7)$ = ${n^3-4} - n^3 - 7$ = $-4-7$ = $-11$\
+Wniosek z tego taki, że **prawą stronę również rozłożyliśmy prawidłowo**.\
+Wracając do wzoru ogólnego twierdzenia, należy podstawić i wyliczyć wartości.\
+$x=-11$\
+$z=n^3+7$\
+$k=3n^3-2$\
+Więc równanie zapisane według wzoru twierdzenia wygląda tak:\
+$(1 + \frac{-11}{n^3+7})^{3n^3-2} = e^{lim_{n\to 0}\frac{(3n^3-2)\cdot(-11)}{n^3+7}}$\
+\
+Zostawię na razie $e$ i wyliczę samą granicę:\
+${lim_{n\to 0}\frac{(3n^3-2)\cdot(-11)}{n^3+7}}$ = ${lim_{n\to 0}\frac{-33n^3+22}{n^3+7}}$\
+\
+Obliczając to teraz jak zwykłą granicę, mogę **wyciągnąć najwyższą potęgę $n$ przed nawias, co pozwoli mi ją skrócić**.\
+${lim_{n\to 0}\frac{n^3(-33 + \frac{-11}{n^3})}{n^3(1 + \frac{7}{n^3})}}$\
+\
+Ułamki posiadające w mianowniku jakąkolwiek potęgę $n$ zmierzają automatycznie do $0$, więc tak naprawdę mogę je **"pominąć"**, co daje:\
+Już normalnie liczony ułamek bez granicy, ponieważ pozbyliśmy się każdego $n$ w ułamku:\
+$\frac{-33 + 0}{1+0}$ = $\frac{-33}{1}$ = $-33$
+
+`TERAZ NALEŻY NIE ZAPOMNIEĆ, ŻE TO POTĘGA LICZBY EULERA, WIĘC NALEŻY JĄ PRZEPISAĆ:`\
+$lim_{n\to 0}(\frac{n^3-4}{n^3+7})^{3n^3-2} = e^{-33}$
+
+# Wnioski
+
+Całkiem rozbudowane stwierdzenie, no nie powiem. Zauważyliśmy tą zależność całkiem przypadkowo i od razu lecieliśmy na opatentowanie tego.\
+Mam nadzieję, że jest to w miarę zrozumiałe, a w razie czego, proszę o pytania w komentarzach na dole odnośnie twierdzenia.\
+Poniżej znajdują się też inne rozwiązane przykłady, które mogą być pomocne w zrozumieniu tego.\
+Zachęcam też zajrzeć na sam dół, gdzie znajdują się przykłady treningowe wraz z rozwiązaniami w celu sprawdzenia wyniku.
+
+Pozdrawiamy!\
+**Zgrany zespół - Szymon & Patryk**
+
+# Przykłady rozwiązane
+
+##### Nie zapisuję tutaj $lim_{n\to 0}$, bo to jest oczywiste, że to granica, a nie wartość bezwzględna.
+
+##### Jednak warto mieć to na uwadze, że **to tam jest**, `nie znika`!
+
+#### $1)$ $(\frac{n+1}{n-1})^{7n} = (\frac{n-1}{n-1} + \frac{2}{n-1})^{7n}$
+
+Stosując twierdzenie:
+
+#### $= e^{lim_{n\to 0}\frac{7n\cdot2}{n-1}}$
+
+#### $= e^{lim_{n\to 0}\frac{14n}{n-1}}$
+
+#### $= e^{lim_{n\to 0}14}$
+
+#### $= e^{14}$
+
+`↓ WAŻNY PRZYKŁAD!`
+
+#### $2)$ $(\frac{n+3}{4-n})^n = (\frac{n+3}{-n+4})^n = (\frac{-n+4}{-n+4} + \frac{2n-1}{-n+4})^n$
+
+Stosując twierdzenie:
+
+#### $= e^{lim_{n\to 0}\frac{(2n-1)n}{-n+4}}$
+
+#### $= e^{lim_{n\to 0}\frac{2n^2-n}{-n+4}}$
+
+Wyciągając tutaj $n$ i tak nie pozbędziemy się jej z licznika. **Oznacza to, że granica tego ciągu to $\infty$**.\
+Liczba Eulera podniesiona do potęgi nieskończonej jest symbolem `NIEOZNACZONYM`, więc ta funkcja nie ma granicy w miejscu $n=0$.
+
+#### $3)$ $(\frac{n+4}{n+3})^{5-2n} = (\frac{n+3}{n+3} + \frac{1}{n+3})^{5-2n}$
+
+Stosując twierdzenie:
+
+#### $= e^{lim_{n\to 0}\frac{(5-2n)\cdot1}{n+3}}$
+
+#### $= e^{lim_{n\to 0}\frac{-2n+5}{n+3}}$
+
+#### $= e^{lim_{n\to 0}\frac{n(-2+\frac{5}{n})}{n(1+\frac{3}{n})}}$
+
+#### $= e^{-2}$
+
+# Przykłady treningowe
+
+#### $1)$ $(\frac{n^2-1}{n^2})^{2n^2-3} = ?$
+
+<details>
+  <summary>Rozwiązanie</summary>
+
+$(\frac{n^2-1}{n^2})^{2n^2-3} = (\frac{n^2}{n^2} + \frac{-1}{n^2})^{2n^2-3}$\
+Stostując twierdzenie:\
+$ = e^{lim_{n\to 0}\frac{((2n^2-3)(-1))}{n^2}}$\
+$ = e^{lim_{n\to 0}\frac{-2n^2+3}{n^2}}$\
+$ = e^{lim_{n\to 0}\frac{n(-2+\frac{3}{n})}{n(1+\frac{1}{n})}}$\
+$ = e^{-2}$\
+Lub alternatywnie:\
+$ = \frac{1}{e^2}$
+
+</details>
+
+#### $2)$ $(\frac{2n^2+6}{2n^2-8})^{\frac{2n^3}{n-1}} = ?$
+
+<details>
+  <summary>Rozwiązanie</summary>
+
+$(\frac{2n^2+6}{2n^2-8})^{\frac{2n^3}{n-1}} =  (\frac{2n^2-8}{2n^2-8} + \frac{14}{2n^2-8})^{2n^2-3}$\
+Stostując twierdzenie:\
+$ = \frac{\frac{14}{1} \cdot (\frac{2n^3}{n-1})}{2n^2-8}$\
+$ = \frac{\frac{28n^3}{n-1}}{2n^2-8}$\
+$ = \frac{28n^3}{n-1} \cdot (\frac{1}{2n^2-8})$\
+$ = \frac{28n^3}{(n-1)((2n^2-8))}$\
+$ = \frac{28n^3}{2n^3-8n-2n^2+8}$\
+Wyciągając najwyższą potęgę $n$ z licznika i mianownika, czyli $n^3$:\
+$ = \frac{n^3(28)}{n^3(2)}$\
+Reszty liczb nie pisałem, ponieważ ich granica i tak zmierza do zera, jeśli mają mniejszą potęgę.\
+$ = e^{lim_{n\to 0}\frac{28}{2}}$\
+$ = e^{14}$
+
+</details>
+
+#### $3)$ $(\frac{2n^2-n+2}{2n^2+1})^{3n-1} = ?$
+
+<details>
+  <summary>Rozwiązanie</summary>
+
+$(\frac{2n^2-n+2}{2n^2+1})^{3n-1} =  (\frac{2n^2+1}{2n^2+1} + \frac{-n+1}{2n^2+1})^{3n-1}$\
+Stostując twierdzenie:\
+$ = e^{lim_{n\to 0}\frac{(-n+1)(3n-1)}{2n^2+1}}$\
+$ = e^{lim_{n\to 0}\frac{-3n^2-1}{2n^2+1}}$\
+$ = e^{lim_{n\to 0}\frac{n^2(-3)}{n^2(2)}}$\
+$ = e^{\frac{-3}{2}}$
+
+</details>
+
+#### $4)$ $(\frac{6n^2 - \frac{2}{n}}{6n^2 + \frac{1}{n}})^{3n^3+5} = ?$
+
+<details>
+  <summary>Rozwiązanie</summary>
+
+$(\frac{6n^2 - \frac{2}{n}}{6n^2 + \frac{1}{n}})^{3n^3+5} =  (\frac{6n^2 + \frac{1}{n}}{6n^2 + \frac{1}{n}} + \frac{\frac{-3}{n}}{6n^2 + \frac{1}{n}})^{3n-1}$\
+Stostując twierdzenie:\
+$ = \frac{(\frac{-3}{n})(3n^3+5)}{6n^2 + \frac{1}{n}}$\
+$ = \frac{\frac{-9n^3}{n} - \frac{15}{n}}{6n^2 + \frac{1}{n}}$\
+$ = \frac{-9n^2 - \frac{15}{n}}{6n^2 + \frac{1}{n}}$\
+$ = \frac{n^2(-9)}{n^2(6)}$\
+$ = \frac{-9}{6}$ = $-\frac{-3}{2}$\
+$ ⇒ e^{\frac{-3}{2}}$\
+Lub alternatywnie:\
+Korzystając z własności potęg:\
+$ a^{\frac{n}{m}} = \sqrt[m]{a^n}$\
+$ ⇒ \frac{1}{e^{\frac{3}{2}}}$\
+$ ⇒ \frac{1}{\sqrt[2]{e^3}}$
+
+</details>
+
+
+# Linki:
+- Link do mojej głównej strony internetowej: [Klik](http://radzionkow.net/portfolio)
