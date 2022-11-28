@@ -11,7 +11,7 @@ To źle trafiłeś. Skręcior to zwyczajny chłopak z klatki blokowej, który - 
 
 ## Pomysł
 
-Sam pomysł na bota narodził się, kiedy zaczęły wymierać wszystkie boty muzyczne przez strike'i otrzymane od np. YouTube. Kolega, który wiedział, że zajmuję się programowaniem, napisał, czy przypadkiem nie byłym w stanie ukleić jakiegoś. Oczywiście, że byłem. Skorzystać z gotowej templatki znalezionej w 20 minut i podaniu tokena. Cała praca zajęła około 10 minut. Potem narodziły się większe problemy. Link do dodania bota został podsyłany coraz dalej i dalej. Użytkownicy domagali się wsparcia np. Spotify czy Apple Music, czego ta templatka nie posiadała wbudowanego. Zdecydowałem wtedy, że to nie jest to. Żeby mieć w pełni kontrolę nad kodem muszę napisać go własnoręcznie. Po wielu nieprzespanych nocach pojawiła się oficjalna `wersja 1.0`.Nie powiem, było z nią tyle problemów jak z niczym innym. Przykładowo, nie wspierała niczego innego jak zwykły link. Ah.. Strasznie to wyglądało. Podrzucam tu screena z tego czasu:
+Sam pomysł na bota narodził się, kiedy zaczęły wymierać wszystkie boty muzyczne przez strike'i otrzymane od np. YouTube. Kolega, który wiedział, że zajmuję się programowaniem, napisał, czy przypadkiem nie byłym w stanie ukleić jakiegoś. Oczywiście, że byłem. Skorzystać z gotowej templatki znalezionej w 20 minut i podać token. Cała praca zajęła około 30 minut. Potem narodziły się większe problemy. Link do dodania bota został podsyłany coraz dalej i dalej. Użytkownicy domagali się wsparcia np. Spotify czy Apple Music, czego ta templatka nie posiadała wbudowanego. Zdecydowałem wtedy, że to nie jest to. Żeby mieć w pełni kontrolę nad kodem muszę napisać go własnoręcznie. Po wielu nieprzespanych nocach pojawiła się oficjalna `wersja 1.0`. Nie powiem, było z nią tyle problemów jak z niczym innym. Przykładowo, nie wspierała niczego innego jak zwykły link. Ah.. Strasznie to wyglądało. Podrzucam tu screena z tego czasu:
 ![Początki bywają ciężkie](https://i.imgur.com/A0bI4v5.png)
 
 Nie wspominam już nawet o tym, że dokładność wyszukiwania, brak większości funkcji były na porządku dziennym. Co lepsze, korzystał z gotowego publicznego modułu do puszczania muzyki, więc można się domyślić, że jego stabilność była okropna.
@@ -64,7 +64,7 @@ Ludzie zapisywali swoje serwery na listę, ja je zatwierdzałem, a z serwerów, 
 ## Wyjście z problemu
 
 Wyjście z problemu nigdy nie było moim pomysłem. Zawdzięczam je w 100% nieznanemu mi osobiście niestety użytkownikowi, który wysunął tak proste rozwiązanie, że aż genialne.\
-`Mejzu#7924`, użytkownik Skręciora na tenmoment i mam nadzieję, że do dziś, zaproponował to:
+`Mejzu#7924`, użytkownik Skręciora na ten moment i - mam nadzieję - że do dziś, zaproponował to:
 ![Dziękuję Ci za to](https://i.imgur.com/7QQLMR7.png)
 `Jeśli to czytasz, nie wiesz jak jestem Ci wdzięczny, za to że cała moja praca nie poszła na marne.`\
 Na co odpowiedziałem:
@@ -98,7 +98,7 @@ Praca nad botem trwa już od ponad roku a użytkownicy nadal są zadowoleni z mo
 ![Komentarze](https://i.imgur.com/1OopmtO.png)
 ![Komentarze](https://i.imgur.com/hHxy8Tt.png)
 
-Skręcior dzięki wam służy dziennie ponad `5 milionami` odtworzonych utworów dla ponad `50 tysięcy` użytkowników. **Statystyki z dnia 27.11.2022**\
+Skręcior dzięki wam serwuje dziennie ponad `5 milionów` odtworzonych utworów dla ponad `50 tysięcy` użytkowników. **Statystyki z dnia 27.11.2022**\
 _(Zsumowane statystyki z obu botów)_
 ![Statystyki](https://i.imgur.com/BV4lBT4.png)
 
