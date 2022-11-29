@@ -26,7 +26,7 @@ Dowiedziałem się, że przecież można modele tworzyć w Blenderze, a nie od z
 
 Żeby modele były klikalne i dostępne do interakcji użytkownika trzeba przecież dodać hitboxy. No tak, ale jak? Z pomocą tutaj przychodzą `Vectory`. Wystarczyło stworzyć prostokąt o wymiarach modelu i przypisać mu odpowiednią klasę, która pozwalałaby na interakcję z użytkownikiem. Wszystko działało idealnie, aż do momentu, gdy zdecydowałem się na dodanie **animacji**.
 
-# Tekstury
+## Tekstury
 
 Ostatnią rzeczą do zrobienia przed implementacją funkcjonalności strony były tekstury. Gadka taka sama jak przy modelowaniu. Nic ciężkiego, ale bardzo czasochłonne. Szukanie odpowiednich wymiarów, przycinanie, składanie je w jeden plik, składanie ich w trójwymiarowej rzeczywistości... nieprzyjmne. Po prostu **nieprzyjemne**. Ale jakie to było piękne, gdy wszystko się udało.
 
