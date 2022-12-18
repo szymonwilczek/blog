@@ -553,33 +553,45 @@ Odpowiedź **A**.
 Najcięższe zadanie ze wszystkich jak mam być szczery.\
 Podzielmy je sobie na kroki:\
 \
-**PIERWSZY KROK**\
+**WYPISUJEMY DANE Z TREŚCI ZADANIA**\
 |AC| = 16 a |BD| = 12, to wiemy z treści zadania.\
 Na podstawie podobieństwa trójkątów z cechy kąt, kąt, kąt możemy wysunąć, że:\
-$\Delta FBG \sim \Delta ABC$\
-i $\Delta AFE \sim \Delta ABD$\
+$\Delta AEF \sim \Delta ADB$\
+i $\Delta FBG \sim \Delta ABC$
+
+Z tego wniosku możemy wysunąć układ równań:\
+$\frac{\mid AF \mid}{\mid EF \mid} = \frac{\mid AB \mid}{\mid BD \mid}$\
+oraz:\
+$\frac{\mid BF \mid}{\mid FG \mid} = \frac{\mid AB \mid}{\mid AC \mid}$
+
+Jako $a$ oznaczę naszą szukaną długość boku rombu umieszczonego w równoległoboku i uzupełnię za pomocą niej powyższe równanie,\
+z którego wynika, że:\
+$\mid EF \mid = a$ oraz $\mid FG \mid = a$\
+Resztę danych odczytujemy z rusunku:\
+$\mid BD \mid = 12$\
+$\mid AC \mid = 16$\
+Uzupełniamy układ równań zapisany wyżej naszymi danymi:\
+$\frac{\mid AF \mid}{a} = \frac{\mid AB \mid}{12}$\
+oraz:\
+$\frac{\mid BF \mid}{a} = \frac{\mid AB \mid}{16}$\
+Zatem:\
+$\mid AF \mid = \frac{\mid AB \mid * a}{12}$\
+oraz:\
+$\mid BF \mid = \frac{\mid AB \mid * a}{16}$\
+Wobec tego:\
+$\mid AB \mid = \mid AF \mid + \mid BF \mid = \frac{\mid AB \mid *a}{12} + \frac{\mid AB \mid *a}{16}$\
+$\mid AB \mid$ to całość, czyli oznaczmy je jako `1`, żeby wyliczyć wartość $a$, naszą długość boku rombu.\
 \
-**DRUGI KROK**\
-Zapiszmy układ równań:\
-![zadanie23.1](https://i.imgur.com/KPrTMkd.png)
-Gdzie $a$ to długość jednej przekątnej w strosunku do $x$ - drugiej przekątnej równoległoboku.\
-Na podstawie podobieństwa jesteśmy w stanie ułożyć właśnie taki układ równań, który wyliczymy w następnym kroku.\
-\
-**TRZECI KROK**\
-$\frac{\frac{16x}{\mid AB \mid}}{17} = \frac{\mid AB \mid -x}{\mid AB \mid}$
-$\mid AB \mid * \frac{16x}{\mid AB \mid} = 17(\mid AB \mid -x)$
-$16x = 17\mid AB \mid - 17x$
-$\mid AB \mid = \frac{7}{3}x$\
-\
-**CZWARTY KROK**\
-Rozwiązujemy wcześniej wypisany układ równań podstawiając wyliczone dane:\
-$\frac{a}{16} = \frac{x}{\frac{7}{3}x}$\
-$\frac{a}{16} = \frac{3}{7}$\
-$a = \frac{3}{7} * 16$\
+$1 = \frac{1*a}{12} + \frac{1*a}{16}$
+$1 = \frac{a}{12} + \frac{a}{16}$\
+Sprowadzamy ułamek do wspólnego mianownika jakim jest `48`:\
+$1 = \frac{4a}{48} + \frac{3a}{16}$\
+$1 = \frac{4a + 3a}{48}$\
+$1 = \frac{7a}{48}$\
+Żeby uzyskać $a$ musimy pomnożyć obie strony przez `48` w celu pozbycia się ułamka:\
+$48 = 7a$\
 $a = \frac{48}{7}$\
-Co jest naszą finalną odpowiedzią.
-\
-Uuuuh, to było trudne.
+Co też jest naszą odpowiedzią.
 
 ## Zadanie 24
 
